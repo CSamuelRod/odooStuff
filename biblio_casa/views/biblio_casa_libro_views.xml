@@ -1,0 +1,31 @@
+<odoo>
+    <record id="biblio_casa_libro_action" model="ir.actions.act_window">
+        <field name="name">Libros</field>
+        <field name="res_model">biblio_casa.libro</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="biblio_casa_libro_tree_view" model="ir.ui.view">
+        <field name="name">biblio_casa.libro.tree</field>
+        <field name="model">biblio_casa.libro</field>
+        <field name="arch" type="xml">
+            <tree string="Libros">
+                <field name="isbn"/>
+                <field name="title"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="biblio_casa_libro_form_view" model="ir.ui.view">
+        <field name="name">biblio_casa.libro.form</field>
+        <field name="model">biblio_casa.libro</field>
+        <field name="arch" type="xml">
+            <form string="Libros">
+                <sheet>
+                    <field name="isbn"/>
+                    <field name="title"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

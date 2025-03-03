@@ -1,0 +1,25 @@
+<odoo>
+<menuitem
+    id="bli_menu"
+    name="Biblioteca"
+    sequence="10"/>
+<menuitem
+    id="bli_libro_menu"
+    parent="bli_menu"
+    name="Libros"
+    action='bli_libro_action'
+    sequence="20"/>
+<menuitem
+    id="bli_carnet_menu"
+    name="Carnet"
+    parent="bli_menu"
+    action="bli_carnet_action"
+    sequence="30"/>
+<menuitem
+    id="bli_prestamo_menu"
+    name="Prestamo"
+    parent="bli_menu"
+    action="bli_prestamo_action"
+    sequence="40"/>
+
+</odoo>

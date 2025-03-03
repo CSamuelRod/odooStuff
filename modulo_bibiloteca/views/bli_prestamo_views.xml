@@ -1,0 +1,40 @@
+<odoo>
+<record id="bli_prestamo_action" model="ir.actions.act_window">
+    <field name="name">Prestamo</field>
+    <field name="res_model">bli.prestamo</field>
+    <field name="view_mode">tree,form</field>
+
+</record>
+
+<record id="bli_prestamo_tree_view" model="ir.ui.view">
+    <field name="name">bli.prestamo.tree</field>
+    <field name="model">bli.prestamo</field>
+    <field name="arch" type="xml">
+        <tree string="Prestamo">
+            <field name="fecha_prestamo"/>
+            <field name="fecha_devolucion"/>
+            <!--<field name="libro_id"/>-->
+            <!--<field name="socio_id"/>-->
+        </tree>
+    </field>
+
+</record>
+
+<record id="bli_prestamo_form_view" model="ir.ui.view">
+    <field name="name">bli.prestamo.tree</field>
+    <field name="model">bli.prestamo</field>
+    <field name="arch" type="xml">
+        <form string="Prestamo">
+            <sheet>
+                <field name="fecha_prestamo"/>
+                <field name="fecha_devolucion"/>
+                <!--<field name="libro_id"/>-->
+                <!--<field name="socio_id"/>--> 
+            </sheet>            
+        </form>
+    </field>
+
+</record>
+
+
+</odoo>

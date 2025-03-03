@@ -1,0 +1,35 @@
+<odoo>
+<record id="bli_carnet_action" model="ir.actions.act_window">
+    <field name="name">Carnet</field>
+    <field name="res_model">bli.carnet</field>
+    <field name="view_mode">tree,form</field>
+
+</record>
+
+<record id="bli_carnet_tree_view" model="ir.ui.view">
+    <field name="name">bli.carnet.tree</field>
+    <field name="model">bli.carnet</field>
+    <field name="arch" type="xml">
+        <tree string="Carnet">
+            <field name="numero_carnet"/>
+            <field name="nombre_socio"/>
+            <!--<field name="socio_id"/>-->
+        </tree>
+    </field>
+
+</record>
+
+<record id="bli_carnet_form_view" model="ir.ui.view">
+    <field name="name">bli.carnet.tree</field>
+    <field name="model">bli.carnet</field>
+    <field name="arch" type="xml">
+        <form string="Carnet">
+            <sheet>
+                <field name="numero_carnet"/>
+                <field name="nombre_socio"/>
+                <!--<field name="socio_id"/>-->
+            </sheet>            
+        </form>
+    </field>
+</record>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_biblio_casa_carnet,access_biblio_casa_carnet,model_biblio_casa_carnet,base.group_user,1,1,1,1
+access_biblio_casa_libro,access_biblio_casa_libro,model_biblio_casa_libro,base.group_user,1,1,1,1
+access_biblio_casa_prestamo,access_biblio_casa_prestamo,model_biblio_casa_prestamo,base.group_user,1,1,1,1
+access_biblio_casa_res_partner,access_biblio_casa_res_partner,model_res_partner,base.group_user,1,1,1,1

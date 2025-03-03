@@ -1,0 +1,42 @@
+<odoo>
+<record id="bli_libro_action" model="ir.actions.act_window">
+    <field name="name">Libro</field>
+    <field name="res_model">bli.libro</field>
+    <field name="view_mode">tree,form</field>
+
+</record>
+
+<record id="bli_libro_tree_view" model="ir.ui.view">
+    <field name="name">bli.libro.tree</field>
+    <field name="model">bli.libro</field>
+    <field name="arch" type="xml">
+        <tree string="Libros">
+            <field name="isbn"/>
+            <field name="title"/>
+           <!--<field name="autor_id"/>-->
+            <!--<field name="prestamo_id"/>-->
+        </tree>
+    </field>
+
+</record>
+
+<record id="bli_libro_form_view" model="ir.ui.view">
+    <field name="name">bli.libro.tree</field>
+    <field name="model">bli.libro</field>
+    <field name="arch" type="xml">
+        <form string="Libros">
+            <sheet>
+                <field name="isbn"/>
+                <field name="title"/>
+                <!--<field name="autor_id"/>-->
+                <!--<field name="prestamo_id"/>-->
+                <!--<field name="socio_fav_ids" domain="[('es_socio', '=', True)]"/>-->
+            </sheet>
+            
+        </form>
+    </field>
+
+</record>
+
+
+</odoo>

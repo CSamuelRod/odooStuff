@@ -1,0 +1,31 @@
+<odoo>
+    <record id="biblio_casa_carnet_action" model="ir.actions.act_window">
+        <field name="name">Carnet</field>
+        <field name="res_model">biblio_casa.carnet</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="biblio_casa_carnet_tree_view" model="ir.ui.view">
+        <field name="name">biblio_casa.carnet.tree</field>
+        <field name="model">biblio_casa.carnet</field>
+        <field name="arch" type="xml">
+            <tree string="Carnets">
+                <field name="numero_carnet"/>
+                <field name="nombre_socio"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="biblio_casa_carnet_form_view" model="ir.ui.view">
+        <field name="name">biblio_casa.carnet.form</field>
+        <field name="model">biblio_casa.carnet</field>
+        <field name="arch" type="xml">
+            <form string="Carnet">
+                <sheet>
+                    <field name="numero_carnet"/>
+                    <field name="nombre_socio"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

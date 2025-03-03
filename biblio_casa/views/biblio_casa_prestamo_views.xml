@@ -1,0 +1,31 @@
+<odoo>
+    <record id="biblio_casa_prestamo_action" model="ir.actions.act_window">
+        <field name="name">Préstamo</field>
+        <field name="res_model">biblio_casa.prestamo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="biblio_casa_prestamo_tree_view" model="ir.ui.view">
+        <field name="name">biblio_casa.prestamo.tree</field>
+        <field name="model">biblio_casa.prestamo</field>
+        <field name="arch" type="xml">
+            <tree string="Préstamos">
+                <field name="fecha_prestamo"/>
+                <field name="fecha_devolucion"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="biblio_casa_prestamo_form_view" model="ir.ui.view">
+        <field name="name">biblio_casa.prestamo.form</field>
+        <field name="model">biblio_casa.prestamo</field>
+        <field name="arch" type="xml">
+            <form string="Préstamo">
+                <sheet>
+                    <field name="fecha_prestamo"/>
+                    <field name="fecha_devolucion"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

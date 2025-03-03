@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bli_carnet,access_bli_carnet,model_bli_carnet,base.group_user,1,1,1,1
+access_bli_libro,access_bli_libro,model_bli_libro,base.group_user,1,1,1,1
+access_bli_prestamo,access_bli_prestamo,model_bli_prestamo,base.group_user,1,1,1,1
+access_res_partner,access_res_partner,model_res_partner,base.group_user,1,1,1,1

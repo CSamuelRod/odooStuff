@@ -1,0 +1,24 @@
+<odoo>
+    <menuitem
+        id="biblio_casa_menu"
+        name="Biblioteca casaaa"
+        sequence="10"/>
+    <menuitem
+        id="biblio_casa_libro_menu"
+        parent="biblio_casa_menu"
+        name="Libros casa"
+        action="biblio_casa_libro_action"
+        sequence="20"/>
+    <menuitem
+        id="biblio_casa_carnet_menu"
+        name="Carnet casa"
+        parent="biblio_casa_menu"
+        action="biblio_casa_carnet_action"
+        sequence="30"/>
+    <menuitem
+        id="biblio_casa_prestamo_menu"
+        name="Prestamo casa"
+        parent="biblio_casa_menu"
+        action="biblio_casa_prestamo_action"
+        sequence="40"/>
+</odoo>

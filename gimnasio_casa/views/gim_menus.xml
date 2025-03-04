@@ -1,0 +1,25 @@
+<odoo>
+<menuitem
+    id="gim_menu"
+    name="Gimnasio"
+    sequence="10"/>
+<menuitem
+    id="gim_clase_menu"
+    parent="gim_menu"
+    action="gim_clase_action"
+    name="Clase"
+    sequence="20"/>
+<menuitem
+    id="gim_membresia_menu"
+    action="gim_membresia_action"
+    name="Membresia"
+    parent="gim_menu"
+    sequence="30"/>
+<menuitem
+    id="gim_reserva_menu"
+    action="gim_reserva_action"
+    name="Reserva"
+    parent="gim_menu"
+    sequence="40"/>
+
+</odoo>

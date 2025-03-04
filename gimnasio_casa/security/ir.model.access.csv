@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gim_membresia,access_gim_membresia,model_gim_membresia,base.group_user,1,1,1,1
+access_gim_clase,access_gim_clase,model_gim_clase,base.group_user,1,1,1,1
+access_gim_reserva,access_gim_reserva,model_gim_reserva,base.group_user,1,1,1,1
+access_res_partner,access_res_partner,model_res_partner,base.group_user,1,1,1,1

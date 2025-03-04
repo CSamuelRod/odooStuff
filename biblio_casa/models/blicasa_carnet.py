@@ -7,4 +7,4 @@ class BiblioCasaCarnet(models.Model):
     numero_carnet = fields.Text(string='Numero de carnet')
     nombre_socio = fields.Text(string='Nombre del socio') # Campo agregado
     fecha_vencimiento = fields.Date(string='Fecha de vencimiento')
-    socio_id = fields.Many2one('res.partner', string='Socio titular', unique=True)
+    #socio_id = fields.Many2one('res.partner', string='Socio titular')

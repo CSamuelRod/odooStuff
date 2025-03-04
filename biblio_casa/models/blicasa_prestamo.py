@@ -6,5 +6,5 @@ class BiblioCasaPrestamo(models.Model):
 
     fecha_prestamo = fields.Datetime(string='Fecha de prestamo')
     fecha_devolucion = fields.Datetime(string='Fecha de devolución')
-    libro_id = fields.Many2one('biblio_casa.libro', string='Libro prestado')
-    socio_id = fields.Many2one('res.partner', string='Socio', domain=[('es_socio_casa', '=', True)])
+    #libro_id = fields.Many2one('biblio_casa.libro', string='Libro prestado')
+    #socio_id = fields.Many2one('res.partner', string='Socio')

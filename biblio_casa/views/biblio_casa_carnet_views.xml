@@ -12,6 +12,7 @@
             <tree string="Carnets">
                 <field name="numero_carnet"/>
                 <field name="nombre_socio"/>
+                <field name="fecha vencimiento"/>
             </tree>
         </field>
     </record>
@@ -24,6 +25,7 @@
                 <sheet>
                     <field name="numero_carnet"/>
                     <field name="nombre_socio"/>
+                    <field name="fecha vencimiento"/>
                 </sheet>
             </form>
         </field>

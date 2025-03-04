@@ -1,0 +1,14 @@
+<odoo>
+<!-- Extensión res.partner -->
+<record id="view_partner_form_gim" model="ir.ui.view">
+    <field name="name">res.partner.form.gim</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='category_id']" position="after">
+            <field name="es_socio_gimnasio"/>
+            <field name="es_instructor"/>
+        </xpath>
+    </field>
+</record>
+</odoo>

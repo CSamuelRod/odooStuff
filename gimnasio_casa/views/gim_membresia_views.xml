@@ -1,0 +1,35 @@
+<odoo>
+<record id="gim_membresia_action" model="ir.actions.act_window">
+    <field name="name">Carnet</field>
+    <field name="res_model">gim.membresia</field>
+    <field name="view_mode">tree,form</field>
+
+</record>
+
+<record id="gim_membresia_tree_view" model="ir.ui.view">
+    <field name="name">gim.membresia.tree</field>
+    <field name="model">gim.membresia</field>
+    <field name="arch" type="xml">
+        <tree string="Carnet">
+            <field name="numero_membresia"/>
+            <field name="nombre_socio"/>
+            <!--<field name="socio_id"/>-->
+        </tree>
+    </field>
+
+</record>
+
+<record id="gim_membresia_form_view" model="ir.ui.view">
+    <field name="name">gim.membresia.tree</field>
+    <field name="model">gim.membresia</field>
+    <field name="arch" type="xml">
+        <form string="Carnet">
+            <sheet>
+                <field name="numero_membresia"/>
+                <field name="nombre_socio"/>
+                <!--<field name="socio_id"/>-->
+            </sheet>            
+        </form>
+    </field>
+</record>
+</odoo>

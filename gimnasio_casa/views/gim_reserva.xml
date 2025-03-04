@@ -1,0 +1,38 @@
+<odoo>
+<record id="gim_reserva_action" model="ir.actions.act_window">
+    <field name="name">Reserva</field>
+    <field name="res_model">gim.reserva</field>
+    <field name="view_mode">tree,form</field>
+
+</record>
+
+<record id="gim_reserva_tree_view" model="ir.ui.view">
+    <field name="name">gim.reserva.tree</field>
+    <field name="model">gim.reserva</field>
+    <field name="arch" type="xml">
+        <tree string="Reserva">
+            <field name="fecha_reserva"/>
+            <!--<field name="libro_id"/>-->
+            <!--<field name="socio_id"/>-->
+        </tree>
+    </field>
+
+</record>
+
+<record id="gim_reserva_form_view" model="ir.ui.view">
+    <field name="name">gim.reserva.tree</field>
+    <field name="model">gim.reserva</field>
+    <field name="arch" type="xml">
+        <form string="Reserva">
+            <sheet>
+                <field name="fecha_reserva"/>
+                <!--<field name="libro_id"/>-->
+                <!--<field name="socio_id"/>--> 
+            </sheet>            
+        </form>
+    </field>
+
+</record>
+
+
+</odoo>
